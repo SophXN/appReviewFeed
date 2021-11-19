@@ -52,7 +52,7 @@ func getJson(t time.Time) {
 		parseJson("review.json")
 		data, _ := ioutil.ReadAll(response.Body)
 		err := ioutil.WriteFile("review.json", data, 0777)
-		fmt.Printf("Created a new file at: %v", t)
+		fmt.Printf("\nCreated a new file at: %v", t)
 		if err != nil {
 			fmt.Println(err)
 		}
